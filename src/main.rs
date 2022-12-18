@@ -1,10 +1,14 @@
 extern crate piston_window;
 extern crate rand;
 
+
+///calls from snake.rs, game.rs and drawing.rs to generate the snake, game function and drawings
 mod snake;
 mod game;
 mod drawing;
 
+///Creates the game window from the piston_window library
+///Sets color and size 
 use piston_window::*;
 use piston_window::types::Color;
 
@@ -29,15 +33,15 @@ fn main() {
     // Create a snake
     let mut game = Game::new(width, height);
 
-    // Event loop
+    // Event loop - Gets the inputs from the keyboard, draws them out and updates the game
     while let Some(event) = window.next() {
 
-        // Catch the events of the keyboard
+        // Gets inputs from the keyboard
         if let Some(Button::Keyboard(key)) = event.press_args() {
             game.key_pressed(key);
         }
 
-        // Draw all of them
+        // Draw all of the keyboard inputs
         window.draw_2d(&event, |c, g, _| {
             clear(BACK_COLOR, g);
             game.draw(&c, g);
