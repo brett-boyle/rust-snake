@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["WindowsHandle","Raw window handle for Windows."]]};

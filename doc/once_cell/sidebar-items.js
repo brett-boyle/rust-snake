@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":[["race","“First one wins” flavor of `OnceCell`."],["sync",""],["unsync",""]]};

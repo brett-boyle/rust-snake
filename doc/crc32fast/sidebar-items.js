@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"struct":[["Hasher","Represents an in-progress CRC32 computation."]]};

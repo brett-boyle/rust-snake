@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":[["BORDER_COLOR",""],["FOOD_COLOR",""],["GAMEOVER_COLOR",""],["MOVING_PERIOD",""],["RESTART_TIME",""]],"struct":[["Game","This struct generates aspects of the game, including the snake, the food (and its location), and whether or not the game is over."]]};

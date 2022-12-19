@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":[["run_return","Platform-specific methods for event loops independent from the application lifetime."],["windows","Platform-specific methods for Windows."]],"trait":[["ContextTraitExt","Platform-specific extensions for OpenGL `Context`s."]]};

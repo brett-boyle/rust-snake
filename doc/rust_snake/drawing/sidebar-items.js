@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":[["BLOCK_SIZE",""]],"fn":[["draw_block",""],["draw_rectange",""],["to_gui_coord","Using the constant block size to make everything to scale. These functions draw the game board."],["to_gui_coord_u32",""]]};

@@ -1,4 +1,4 @@
-
+///imports necessary libraries
 use std::collections::LinkedList;
 
 use piston_window::Context;
@@ -9,6 +9,7 @@ use drawing::draw_block;
 
 const SNAKE_COLOR: Color = [0.18, 0.80, 0.44, 1.0];
 
+///sets directions, then implements them after the enum
 #[derive(Clone, Copy, PartialEq)]
 pub enum Direction {
     Up, Down, Left, Right
@@ -25,18 +26,20 @@ impl Direction {
     }
 }
 
+///sets coordinates
 #[derive(Debug, Clone)]
 struct Block {
     x: i32,
     y: i32
 }
-
+///sets features of snake including movement and body
 pub struct Snake {
     moving_direction: Direction,
     body: LinkedList<Block>,
     last_removed_block: Option<Block>
 }
 
+///implements movements to the snake
 impl Snake {
     pub fn new(init_x: i32, init_y: i32) -> Snake {
         let mut body: LinkedList<Block> = LinkedList::new();
@@ -99,12 +102,12 @@ impl Snake {
         let removed_blk = self.body.pop_back().unwrap();
         self.last_removed_block = Some(removed_blk);
     }
-
+///sets movement
     pub fn head_position(&self) -> (i32, i32) {
         let head_block = self.body.front().unwrap();
         (head_block.x, head_block.y)
     }
-
+///if there is no directional input, it will keep moving in the original direction
     pub fn head_direction(&self) -> Direction {
         self.moving_direction
     }
@@ -133,7 +136,7 @@ impl Snake {
         let blk = self.last_removed_block.clone().unwrap();
         self.body.push_back(blk);
     }
-
+///sets it so that if it overlaps itself the game ends
     pub fn is_overlap_except_tail(&self, x: i32, y: i32) -> bool {
         let mut checked = 0;
         for block in &self.body {

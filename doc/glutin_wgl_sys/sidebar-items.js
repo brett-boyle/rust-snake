@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":[["wgl","WGL bindings"],["wgl_extra","Functions that are not necessarily always available"]]};

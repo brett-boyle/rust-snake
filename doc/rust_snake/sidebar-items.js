@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"constant":[["BACK_COLOR",""]],"fn":[["main",""]],"mod":[["drawing",""],["game",""],["snake","calls from snake.rs, game.rs and drawing.rs to generate the snake, game function and drawings"]]};

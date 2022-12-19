@@ -1,0 +1,1 @@
+window.SIDEBAR_ITEMS = {"mod":[["state_machine","A State Table for Contextual Kerning implementation."]],"struct":[["Subtable","A kerning subtable."],["Subtables","An iterator over kerning subtables."]]};
