@@ -1,4 +1,3 @@
-///Use libraries
 use piston_window::types::Color;
 use piston_window::*;
 
@@ -13,7 +12,6 @@ const GAMEOVER_COLOR: Color = [0.91, 0.30, 0.24, 0.5];
 const MOVING_PERIOD: f64 = 0.2; // in second
 const RESTART_TIME: f64 = 1.0; // in second
 
-///This struct generates aspects of the game, including the snake, the food (and its location), and whether or not the game is over.
 pub struct Game {
     snake: Snake,
 
@@ -33,7 +31,6 @@ pub struct Game {
     waiting_time: f64,
 }
 
-///Implements these features from the struct above into the game, giving it 'default' settings
 impl Game {
     pub fn new(width: i32, height: i32) -> Game {
         Game {
@@ -54,7 +51,6 @@ impl Game {
         }
 
         let dir = match key {
-            ///Sets the keys to allow the snake to move
             Key::Up => Some(Direction::Up),
             Key::Down => Some(Direction::Down),
             Key::Left => Some(Direction::Left),
